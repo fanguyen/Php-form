@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+background-image: url('forest.jpg');
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 16px;
+
+margin-top: -70px;
+padding-top: 250px;
+text-align:center;
+background-attachment: relative;
+
+-webkit-background-size: 100%;
+-moz-background-size: 100%;
+-o-background-size: 100%;
+background-size: 100%;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+p{
+  font-size: 16px;
+  color: #f2f2f2;
+}
+
+input:nth-child(-n+5){
+  width : 11px;
+  height: 11px;
+}
+
+span{
+    font-size: 14px;
+}
+
+.container{
+  background-color: rgba(80, 80, 80, 0.9);
+  width: 300px;
+  padding-top:20px;
+  padding-bottom:30px;
+  margin-left: 40%;
+  border-radius: 3px;
+}
+
+input{
+width : 160px;
+height: 18px;
+padding : 3px;
+margin-bottom: 15px;
+border :1px solid #E0E1E1;
+border-radius: 3px;
+text-align: left;
+font-size: 10px;
+}
+input[type ="submit"]{
+width :170px;
+height: 25px;
+text-align: center;
+padding : 4px 15px;
+background : #58A2DD;
+color :#fff;
+cursor : pointer;
+border :1px solid #E0E1E1;
+}
+
+input:not([type="submit"]):{
+border: 1px solid red;
+  }
+
+input:not([type="submit"]):invalid{
+border: 1px solid red;
+  }
+input:not([type="submit"]):valid {
+border: 1px solid green ;
+}
+
+[data-fab]{ /*on cible l'attribut personnalise. pour cela il faut utiliser le crochet*/
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted gray;
+}
+
+[data-fab]:hover:after{
+  content: attr(data-fab); /* on recupere et affiche la valeur de l'attribut personnalise*/
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  white-space: nowrap; /*on empeche le retour à la ligne*/
+  padding: 5px 10px;
+  background: #cde;
+
+}
+
+.php-content{
+  color: white;
+}
